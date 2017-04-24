@@ -6,7 +6,7 @@ SpaceSlash game repo. SpaceSlash is free and open source, feel free to fork it.
 Kenney Vleugels (www.kenney.nl)
 
 ### Planet Sprites
-Magnesus (openclipart.org)
+Magnesus (www.openclipart.org/user-detail/Magnesus)
 
 ### Sounds
 Alexandr Zhelanov ("Space" - Background music)
