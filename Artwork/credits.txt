@@ -1,0 +1,15 @@
+Credits
+
+Spaceships/Lasers/Powerups Sprites:
+Kenney Vleugels (www.kenney.nl)
+
+Planet Sprites
+Magnesus (openclipart.org)
+
+Sounds:
+Alexandr Zhelanov ("Space" - Background music)
+Michel Baradari ("Rumble explosion" - Explosion sounds)
+Kenney Vleugels (www.kenney.nl - "Game Over" voice over)
+
+Project made by Unity and supported by great works posted on 
+OpenGameArt.org and OpenClipart.org

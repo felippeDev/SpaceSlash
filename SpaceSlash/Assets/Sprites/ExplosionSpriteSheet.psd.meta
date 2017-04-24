@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: 7e0bf16587f279148ae1b545a621e44b
+timeCreated: 1492738753
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ExplosionSpriteSheet_6
+    21300002: ExplosionSpriteSheet_0
+    21300004: ExplosionSpriteSheet_1
+    21300006: ExplosionSpriteSheet_5
+    21300008: ExplosionSpriteSheet_4
+    21300010: ExplosionSpriteSheet_3
+    21300012: ExplosionSpriteSheet_2
+    21300014: ExplosionSpriteSheet_7
+    21300016: ExplosionSpriteSheet_8
+    21300018: ExplosionSpriteSheet_9
+    21300020: ExplosionSpriteSheet_10
+    21300022: ExplosionSpriteSheet_15
+    21300024: ExplosionSpriteSheet_14
+    21300026: ExplosionSpriteSheet_11
+    21300028: ExplosionSpriteSheet_12
+    21300030: ExplosionSpriteSheet_13
+    21300032: ExplosionSpriteSheet_16
+    21300034: ExplosionSpriteSheet_17
+    21300036: ExplosionSpriteSheet_18
+    21300038: ExplosionSpriteSheet_19
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 148
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 148
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 148
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 148
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 148
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 148
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 148
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 148
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 148
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 148
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 38
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 38
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 38
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 38
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 38
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 38
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 38
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 38
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 38
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ExplosionSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 38
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
