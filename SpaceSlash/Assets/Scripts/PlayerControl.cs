@@ -13,7 +13,6 @@ public class PlayerControl : MonoBehaviour
     public GameObject PlayerBulletPosition02;
     public GameObject ExplosionGO;
     public VirtualJoystick moveJoystick;
-    public ScreenJoystick screenJoystick;
 
     public Text LivesUIText;
 
@@ -59,12 +58,6 @@ public class PlayerControl : MonoBehaviour
         if (moveJoystick.InputDirection != Vector3.zero)
         {
             direction = moveJoystick.InputDirection;
-        }
-
-        // Player movement by touch
-        if(Input.touchCount > 1 && screenJoystick.InputDirection != Vector3.zero)
-        {
-            direction = screenJoystick.InputDirection;
         }
 
         Move(direction);

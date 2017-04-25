@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class VirtualJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
-{
+public class VirtualJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler {
+
     private Image bgImage;
     private Image joystickImage;
     public Vector3 InputDirection { get; set; }
@@ -31,7 +31,7 @@ public class VirtualJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, I
             float x = (bgImage.rectTransform.pivot.x == 1) ? pos.x * 2 + 1 : pos.x * 2 - 1;
             float y = (bgImage.rectTransform.pivot.y == 1) ? pos.y * 2 + 1 : pos.y * 2 - 1;
 
-            InputDirection = new Vector3(pos.x, pos.y, 0);
+            InputDirection = new Vector3(x, y, 0);
 
             InputDirection = (InputDirection.magnitude > 1) ? InputDirection.normalized : InputDirection;
 
