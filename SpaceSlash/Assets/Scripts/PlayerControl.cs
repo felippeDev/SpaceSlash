@@ -56,16 +56,17 @@ public class PlayerControl : MonoBehaviour
         Vector2 direction = new Vector2(x, y).normalized;
 
         // Player movement by mouse (finger gestures)
-        //if (Input.GetButtonDown("Fire1"))
-        //{
-        //    Debug.Log("Clicked: X = " + Input.mousePosition.x.ToString() + " Y = " + Input.mousePosition.y.ToString());
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+        {
+            Debug.Log("Clicked: X = " + Input.mousePosition.x.ToString() + " Y = " + Input.mousePosition.y.ToString());
 
-        //    Vector3 InputDirection = (Input.mousePosition.magnitude > 1) ? Input.mousePosition.normalized : Input.mousePosition;
+            // Get movement of the finger since last frame
+            Vector2 touchDeltaPosition = Input.GetTouch(0).deltaPosition;
 
-        //    direction = InputDirection;
+            direction = touchDeltaPosition;
 
-        //    Debug.Log("Moving Direction: " + direction);
-        //}
+            Debug.Log("Moving Direction: " + direction);
+        }
 
         // Player movement by joystick
         if (moveJoystick.InputDirection != Vector3.zero)
