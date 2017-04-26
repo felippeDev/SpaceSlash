@@ -13,6 +13,7 @@ public class PlayerControl : MonoBehaviour
     public GameObject PlayerBulletPosition02;
     public GameObject ExplosionGO;
     public VirtualJoystick moveJoystick;
+    public bool isVulnerable;
 
     public Text LivesUIText;
 
@@ -36,7 +37,7 @@ public class PlayerControl : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        isVulnerable = true;
     }
 
     // Update is called once per frame
@@ -53,6 +54,18 @@ public class PlayerControl : MonoBehaviour
         float y = Input.GetAxisRaw("Vertical");
 
         Vector2 direction = new Vector2(x, y).normalized;
+
+        // Player movement by mouse (finger gestures)
+        //if (Input.GetButtonDown("Fire1"))
+        //{
+        //    Debug.Log("Clicked: X = " + Input.mousePosition.x.ToString() + " Y = " + Input.mousePosition.y.ToString());
+
+        //    Vector3 InputDirection = (Input.mousePosition.magnitude > 1) ? Input.mousePosition.normalized : Input.mousePosition;
+
+        //    direction = InputDirection;
+
+        //    Debug.Log("Moving Direction: " + direction);
+        //}
 
         // Player movement by joystick
         if (moveJoystick.InputDirection != Vector3.zero)
@@ -99,7 +112,7 @@ public class PlayerControl : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         // Destroy if colide against enemy or enemy bullets
-        if ((collider.tag == "EnemyShipTag") || (collider.tag == "EnemyBulletTag"))
+        if (((collider.tag == "EnemyShipTag") || (collider.tag == "EnemyBulletTag")) && isVulnerable)
         {
             PlayExplosion();
 
@@ -108,7 +121,7 @@ public class PlayerControl : MonoBehaviour
 
             LivesUIText.text = lives.ToString();
 
-            if(lives == 0)
+            if (lives == 0)
             {
                 GameManagerGO.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
 
