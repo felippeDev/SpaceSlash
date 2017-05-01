@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
@@ -14,6 +15,8 @@ public class PlayerControl : MonoBehaviour
     public GameObject ExplosionGO;
     public VirtualJoystick moveJoystick;
     public bool isVulnerable;
+    public bool autoFire;
+    public float shotsPerSecond;
 
     public Text LivesUIText;
 
@@ -22,7 +25,7 @@ public class PlayerControl : MonoBehaviour
 
     public float speed;
 
-    public void Init()
+    void Awake()
     {
         lives = MaxLives;
 
@@ -30,14 +33,22 @@ public class PlayerControl : MonoBehaviour
 
         transform.position = new Vector2(0, -4f);
 
-        // Working with SetActive instead destroy
         gameObject.SetActive(true);
+
+        isVulnerable = true;
+
+        autoFire = true;
+
+        shotsPerSecond = 6;
     }
 
     // Use this for initialization
     void Start()
     {
-        isVulnerable = true;
+        if (autoFire)
+        {
+            InvokeRepeating("Fire", 0, 1 / shotsPerSecond);
+        }
     }
 
     // Update is called once per frame
@@ -124,9 +135,11 @@ public class PlayerControl : MonoBehaviour
 
             if (lives == 0)
             {
-                GameManagerGO.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
+                //GameManagerGO.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
 
                 gameObject.SetActive(false);
+
+                SceneManager.LoadScene("GameOver");
             }
         }
     }

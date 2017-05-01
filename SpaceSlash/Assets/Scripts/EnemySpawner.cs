@@ -8,6 +8,11 @@ public class EnemySpawner : MonoBehaviour
     public GameObject EnemyGO;
     float maxSpawnRateInSeconds = 5f;
 
+    void Start()
+    {
+        StartEnemySpawner();
+    }
+
     void SpawnEnemy()
     {
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
@@ -39,6 +44,8 @@ public class EnemySpawner : MonoBehaviour
 
     void IncreaseSpawnRate()
     {
+        Debug.Log("Increasing dificulty");
+
         if (maxSpawnRateInSeconds > 1f)
         {
             maxSpawnRateInSeconds--;
@@ -46,12 +53,16 @@ public class EnemySpawner : MonoBehaviour
 
         if(maxSpawnRateInSeconds == 1f)
         {
+            Debug.Log("Freeze dificulty");
+
             CancelInvoke("IncreaseSpawnRate");
         }
     }
 
     public void StartEnemySpawner()
     {
+        Debug.Log("Spawn Started");
+
         maxSpawnRateInSeconds = 5f;
 
         Invoke("SpawnEnemy", maxSpawnRateInSeconds);
@@ -61,6 +72,8 @@ public class EnemySpawner : MonoBehaviour
 
     public void StopEnemySpawner()
     {
+        Debug.Log("Spawn Stoped");
+
         CancelInvoke("SpawnEnemy");
         CancelInvoke("IncreaseSpawnRate");
     }

@@ -20,6 +20,8 @@ public class TimeCounter : MonoBehaviour
         startCounter = false;
 
         timeUI = GetComponent<Text>();
+
+        StartTimeCounter();
     }
 
     public void StartTimeCounter()
