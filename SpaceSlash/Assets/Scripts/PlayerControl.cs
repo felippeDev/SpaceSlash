@@ -74,7 +74,7 @@ public class PlayerControl : MonoBehaviour
             // Get movement of the finger since last frame
             Vector2 touchDeltaPosition = Input.GetTouch(0).deltaPosition;
 
-            direction = touchDeltaPosition;
+            direction = touchDeltaPosition.normalized;
 
             Debug.Log("Moving Direction: " + direction);
         }

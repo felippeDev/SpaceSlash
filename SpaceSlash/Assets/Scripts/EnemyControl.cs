@@ -9,13 +9,36 @@ public class EnemyControl : MonoBehaviour {
     private float speed;
     public GameObject ExplosionGO;
 
-	// Use this for initialization
-	void Start ()
+    Vector2 minPos;
+    Vector2 maxPos;
+
+    // Use this for initialization
+    void Awake()
     {
+        minPos = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+
+        maxPos = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+
+        maxPos.y = (maxPos.y + GetComponent<SpriteRenderer>().sprite.bounds.extents.y);
+
+        minPos.y = (minPos.y - GetComponent<SpriteRenderer>().sprite.bounds.extents.y);
+    }
+
+    // Use this for initialization
+    void Start ()
+    {
+        ResetPosition();
+
         speed = 2.5f;
 
         scoreUITextGO = GameObject.FindGameObjectWithTag("ScoreTextTag");
-	}
+
+        Vector2 position = transform.position;
+
+        position = new Vector2(position.x, position.y + speed * Time.deltaTime);
+
+        transform.position = position;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -25,13 +48,17 @@ public class EnemyControl : MonoBehaviour {
 
         transform.position = position;
 
-        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
-
-        if(transform.position.y < min.y)
+        if(transform.position.y < minPos.y)
         {
-            Destroy(gameObject);
+            ResetPosition();
         }
 	}
+
+    public void ResetPosition()
+    {
+        // Reset the enemy position to random
+        transform.position = new Vector2(Random.Range(minPos.x, maxPos.x), maxPos.y);
+    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
